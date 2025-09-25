@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='health_data_50' inline='true' name='federated.1fsintz1pjpnhu1h0orzp0wkkjz0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='health_data_50' name='textscan.06xnjx10s111ap1b3igct03j0fr5'>
+            <connection class='textscan' directory='C:/Users/user/Downloads' filename='health_data_50.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.06xnjx10s111ap1b3igct03j0fr5' name='health_data_50.csv' table='[health_data_50#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='PatientID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='real' name='BloodPressure' ordinal='3' />
+            <column datatype='real' name='Cholesterol' ordinal='4' />
+            <column datatype='real' name='Glucose' ordinal='5' />
+            <column datatype='string' name='Diabetes' ordinal='6' />
+            <column datatype='string' name='HeartDisease' ordinal='7' />
+            <column datatype='string' name='Obesity' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PatientID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PatientID]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>PatientID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BloodPressure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BloodPressure]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>BloodPressure</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cholesterol</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cholesterol]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>Cholesterol</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Glucose</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Glucose]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>Glucose</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diabetes]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>Diabetes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HeartDisease</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HeartDisease]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>HeartDisease</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Obesity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Obesity]</local-name>
+            <parent-name>[health_data_50.csv]</parent-name>
+            <remote-alias>Obesity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Blood Pressure' datatype='real' name='[BloodPressure]' role='measure' type='quantitative' />
+      <column caption='Heart Disease (copy)' datatype='string' name='[Heart Disease (copy)_1366561069235724288]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[HeartDisease]' />
+      </column>
+      <column caption='Heart Disease' datatype='string' name='[HeartDisease]' role='dimension' type='nominal' />
+      <column caption='Obesity (copy)' datatype='string' name='[Obesity (copy)_1366561069235871745]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Obesity]' />
+      </column>
+      <column caption='Patient ID' datatype='integer' name='[PatientID]' role='dimension' type='ordinal' />
+      <column caption='health_data_50.csv' datatype='table' name='[__tableau_internal_object_id__].[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_153xjcb1p5s4yd1f9g18j1xd6bgg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/25/2025 05:21:49 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>PatientID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PatientID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PatientID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BloodPressure</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BloodPressure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BloodPressure</remote-alias>
+              <ordinal>3</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cholesterol</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cholesterol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cholesterol</remote-alias>
+              <ordinal>4</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Glucose</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Glucose]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Glucose</remote-alias>
+              <ordinal>5</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes</remote-alias>
+              <ordinal>6</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HeartDisease</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HeartDisease]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HeartDisease</remote-alias>
+              <ordinal>7</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Obesity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Obesity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Obesity</remote-alias>
+              <ordinal>8</ordinal>
+              <family>health_data_50.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='health_data_50.csv' id='health_data_50.csv_552B9F98902B4330BA05A2DE4573E34C'>
+            <properties context=''>
+              <relation connection='textscan.06xnjx10s111ap1b3igct03j0fr5' name='health_data_50.csv' table='[health_data_50#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='PatientID' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='real' name='BloodPressure' ordinal='3' />
+                  <column datatype='real' name='Cholesterol' ordinal='4' />
+                  <column datatype='real' name='Glucose' ordinal='5' />
+                  <column datatype='string' name='Diabetes' ordinal='6' />
+                  <column datatype='string' name='HeartDisease' ordinal='7' />
+                  <column datatype='string' name='Obesity' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='health_data_50' name='federated.1fsintz1pjpnhu1h0orzp0wkkjz0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fsintz1pjpnhu1h0orzp0wkkjz0'>
+            <column datatype='string' name='[Diabetes]' role='dimension' type='nominal' />
+            <column caption='Patient ID' datatype='integer' name='[PatientID]' role='dimension' type='ordinal' />
+            <column-instance column='[PatientID]' derivation='Count' name='[cnt:PatientID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diabetes]' derivation='None' name='[none:Diabetes:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1fsintz1pjpnhu1h0orzp0wkkjz0].[cnt:PatientID:qk]</rows>
+        <cols>[federated.1fsintz1pjpnhu1h0orzp0wkkjz0].[none:Diabetes:nk]</cols>
+      </table>
+      <simple-id uuid='{EE25B133-6F2B-4C26-80F2-C4EAFEDEBC5D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fsintz1pjpnhu1h0orzp0wkkjz0].[none:Diabetes:nk]</field>
+            <field>[federated.1fsintz1pjpnhu1h0orzp0wkkjz0].[none:PatientID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0BEB9186-8C05-4082-94BC-AB799132BEC6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='191'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
